@@ -52,7 +52,7 @@ class AuthViewModelTest {
 
         assertTrue(viewModel.authState.value is AuthState.Error)
         assertEquals(
-            "Email y contrasena son requeridos",
+            "Email y contraseña son requeridos",
             (viewModel.authState.value as AuthState.Error).message
         )
     }
