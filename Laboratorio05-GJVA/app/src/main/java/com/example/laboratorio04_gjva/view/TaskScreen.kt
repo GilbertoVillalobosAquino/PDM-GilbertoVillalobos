@@ -68,7 +68,8 @@ fun TaskScreen(viewModel: TaskViewModel) {
                 onTaskCreated = { newTitle, newDescription ->
                     val newTask = Task(
                         title = newTitle,
-                        description = newDescription
+                        description = newDescription,
+                        endDate = java.util.Date()
                     )
                     viewModel.addTask(newTask)
                     showDialog = false
